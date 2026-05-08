@@ -78,6 +78,13 @@ export const eventTypes = [
   "Private Veranstaltungen",
 ] as const;
 
+/** Events section — matches approved marketing copy (typographic dashes). */
+export const eventsIntro =
+  "Ob private Feier oder geschäftlicher Anlass – im Seute Deern bieten wir den passenden Rahmen für unvergessliche Momente. Genießen Sie unsere frische Küche und die besondere Atmosphäre unseres Hauses – individuell abgestimmt auf Ihre Veranstaltung.";
+
+export const contactEyebrow =
+  "Reservieren oder Anfrage stellen – wir freuen uns auf Sie";
+
 export const menuCategories = [
   "Vorspeisen",
   "Fischgerichte",

@@ -24,16 +24,21 @@ body {
 
 .contact-input {
   width: 100%;
-  border-bottom: 1px solid #c7c7c7;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.82);
   background: transparent;
-  padding: 1.25rem 0 0.75rem;
+  padding: 0.35rem 0 0.75rem;
   color: #fff;
   outline: none;
 }
 
 .contact-input::placeholder {
-  color: #fff;
-  opacity: 1;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.contact-input:focus {
+  border-bottom-color: rgb(255, 255, 255);
 }
 
 .hero-grid {
