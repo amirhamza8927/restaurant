@@ -4,10 +4,12 @@ export function RoundedImage({
   src,
   alt,
   className = "",
+  sizes,
 }: {
   src: string;
   alt: string;
   className?: string;
+  sizes?: string;
 }) {
   return (
     <span
@@ -17,7 +19,7 @@ export function RoundedImage({
         src={src}
         alt={alt}
         fill
-        sizes="(min-width: 1024px) 33vw, 100vw"
+        sizes={sizes ?? "(min-width: 1024px) 33vw, 100vw"}
         className="object-cover"
       />
     </span>

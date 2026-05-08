@@ -7,11 +7,12 @@ export function SiteFooter() {
     <footer className="relative bg-black px-5 pb-8 pt-16 md:px-10">
       <div className="mx-auto flex max-w-[1680px] flex-col gap-12 md:flex-row md:items-start md:justify-between">
         <Image
-          src={assets.footerBadge}
-          alt="Restaurant Seute Deern seal"
+          src={assets.badgeNav}
+          alt="Seute Deern — Wappen mit Segelschiff und Koordinaten"
           width={210}
           height={210}
-          className="h-[150px] w-[150px] md:h-[210px] md:w-[210px]"
+          className="h-[150px] w-[150px] shrink-0 md:h-[210px] md:w-[210px]"
+          sizes="(min-width: 768px) 210px, 150px"
         />
         <div className="grid gap-10 md:grid-cols-3">
           <FooterColumn title="Disclaimers" items={["Impressum", "Datenschutz"]} />

@@ -1,9 +1,15 @@
 import Image from "next/image";
+<<<<<<< Updated upstream
 import { assets, contactEyebrow } from "@/app/lib/site-content";
+=======
+>>>>>>> Stashed changes
 import { SectionTitle } from "./section-title";
+
+const CONTACT_BACKGROUND_SRC = "https://placehold.co/1920x669";
 
 export function ContactSection() {
   return (
+<<<<<<< Updated upstream
     <section
       id="contact"
       className="relative overflow-hidden bg-black px-5 pb-24 pt-10 md:px-10 md:pb-28 md:pt-14"
@@ -12,8 +18,17 @@ export function ContactSection() {
         <Image
           src={assets.contact}
           alt="Gastraum mit langem Holztisch und roten Stühlen"
+=======
+    <section id="contact" className="relative overflow-hidden bg-black px-5 pb-20 pt-4 md:px-10">
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 aspect-[1920/669] w-full">
+        <Image
+          src={CONTACT_BACKGROUND_SRC}
+          alt=""
+>>>>>>> Stashed changes
           fill
+          priority={false}
           sizes="100vw"
+<<<<<<< Updated upstream
           className="object-cover object-[center_bottom]"
           priority={false}
         />
@@ -99,6 +114,29 @@ export function ContactSection() {
                 className="contact-input resize-none pt-2 md:min-h-[132px]"
               />
             </div>
+=======
+          className="object-cover object-center"
+        />
+        {/* Top → center: dark overlay that eases out by mid-height */}
+        <div
+          className="absolute inset-0 bg-[linear-gradient(180deg,rgb(0_0_0)_0%,rgb(0_0_0/0.85)_22%,rgb(0_0_0/0.4)_45%,transparent_50%)]"
+          aria-hidden
+        />
+      </div>
+      <div className="relative z-10 mx-auto max-w-[800px]">
+        <SectionTitle
+          centered
+          title="Kontakt"
+          eyebrow="Reservieren oder Anfrage stellen - wir freuen uns auf Sie"
+        />
+        <form className="mt-12 bg-[#35333380] p-8 shadow-2xl backdrop-blur-2xl">
+          <input className="contact-input" placeholder="Anliegen" />
+          <div className="grid gap-5 md:grid-cols-2">
+            <input className="contact-input" placeholder="Name" />
+            <input className="contact-input" placeholder="Email" />
+            <input className="contact-input" placeholder="Telefon" />
+            <input className="contact-input" placeholder="Datum / Uhrzeit" />
+>>>>>>> Stashed changes
           </div>
 
           <label className="mt-10 flex cursor-pointer gap-3 text-left text-xs leading-snug tracking-tight text-white/95 md:mt-12 md:text-[13px] md:leading-relaxed">

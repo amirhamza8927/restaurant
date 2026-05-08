@@ -14,7 +14,6 @@ export const assets = {
   eventOne: "/figma-assets/event-one.png",
   eventTwo: "/figma-assets/event-two.png",
   contact: "/figma-assets/contact.png",
-  footerBadge: "/figma-assets/footer-badge.png",
 } as const;
 
 export const navItems = [
