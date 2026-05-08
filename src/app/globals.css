@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0e0d0d;
+  --foreground: #f6efe5;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-lato);
+  --font-serif: var(--font-playfair);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-lato), Arial, Helvetica, sans-serif;
+}
+
+.font-serif {
+  font-family: var(--font-playfair), "Times New Roman", Georgia, serif;
+}
+
+.contact-input {
+  width: 100%;
+  border-bottom: 1px solid #c7c7c7;
+  background: transparent;
+  padding: 1.25rem 0 0.75rem;
+  color: #fff;
+  outline: none;
+}
+
+.contact-input::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.hero-grid {
+  background:
+    radial-gradient(circle at 78% 28%, #a85f3f66 0%, transparent 34%),
+    radial-gradient(circle at 18% 65%, #6a2f2860 0%, transparent 36%),
+    linear-gradient(125deg, #0e0d0d 0%, #181414 62%, #221615 100%);
+}
+
+.hero-panel {
+  background:
+    linear-gradient(180deg, #1b1616dd 0%, #110f0fef 100%),
+    radial-gradient(circle at 100% 0%, #cf8d5450 0%, transparent 42%);
+}
